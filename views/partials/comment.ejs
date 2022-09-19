@@ -1,0 +1,41 @@
+<div class="mt-3" style="margin-left: <%= depth * 3%>rem">
+  <!-- <div
+  class="mt-3"
+  style="border: 1px solid black; margin-left: <%= depth * 0.5%>rem"
+> -->
+  <li class="mt-1">
+    <h5><%= comment.user.userName %></h5>
+    <%= comment.deleted ? 'Deleted' : comment.text %> <%if(!comment.deleted &&
+    comment.user._id == userId){ %>
+    <form
+      action="/comment/deleteComment/<%= postId %>/<%= comment.id %>?_method=DELETE"
+      method="POST"
+      class="col-3"
+    >
+      <button class="btn btn-primary fa fa-trash" type="submit"></button>
+    </form>
+    <%}%>
+  </li>
+  <details class="mt-3">
+    <summary>Comment</summary>
+
+    <form
+      action="/comment/createComment/<%= postId %>/<%= comment.id %>"
+      method="POST"
+    >
+      <div class="mb-3">
+        <label for="text" class="form-label"></label>
+        <textarea
+          class="form-control"
+          id="text"
+          name="text"
+          placeholder="Add a comment..."
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </details>
+  <% for (const subComment of comment.comments || []) { %> <%-
+  include('comment', { postId, userId, comment: subComment, depth: depth + 1 })
+  -%> <% } %>
+</div>

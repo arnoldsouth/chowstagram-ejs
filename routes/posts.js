@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-// this route needs multer middleware to be used with cloudinary
 const upload = require('../middleware/multer');
 const postsController = require('../controllers/posts');
 const { ensureAuth, ensureGuest } = require('../middleware/auth');
