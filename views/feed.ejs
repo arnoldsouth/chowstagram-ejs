@@ -5,7 +5,8 @@
         <% for(var i=0; i<posts.length; i++) {%>
           <li class="col-6 justify-content-between mt-5">
             <a href="/post/<%= posts[i]._id%>">
-              <img class="img-fluid" src="<%= posts[i].image%>">
+              <img class="" src="<%= posts[i].image%>" width="600" height="600"/>
+              <!-- <img class="img-fluid" src="<%= posts[i].image%>" width="600" height="600"/> -->
             </a>
           </li>
         <% } %>
