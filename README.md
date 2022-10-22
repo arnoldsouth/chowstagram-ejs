@@ -1,3 +1,8 @@
+# Todo
+
+1. Refactor to React components and hooks
+2. Deploy app to custom domain
+
 # Install Dependencies
 
 cd chowstagram
