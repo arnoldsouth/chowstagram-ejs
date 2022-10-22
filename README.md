@@ -3,14 +3,14 @@
 1. Refactor to React components and hooks
 2. Deploy app to custom domain
 
-# Install Dependencies
+## Install Dependencies
 
 cd chowstagram
 Run `npm install`
 
 ---
 
-# Instructions
+## Instructions
 
 Create a `.env` file within `/config/` folder and set the following `key=value`:
 
@@ -22,7 +22,7 @@ API_SECRET=`cloudinary-api-secret`
 
 ---
 
-# Development
+## Development
 
 cd chowstagram
 Run `npm start`
