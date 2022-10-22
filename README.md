@@ -12,7 +12,7 @@ Run `npm install`
 
 ## Instructions
 
-Create a `.env` file within `/config/` folder and set the following `key=value`:
+Rename `.env-example` file to `.env` within `config/` folder and set the following `key=value`:
 
 PORT=3210
 DB_STRING=`mongodb-uri`
