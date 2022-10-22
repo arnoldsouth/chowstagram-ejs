@@ -5,8 +5,8 @@
 
 ### Install Dependencies
 
-cd chowstagram
-Run `npm install`
+1. cd chowstagram
+2. Run `npm install`
 
 ---
 
@@ -14,15 +14,15 @@ Run `npm install`
 
 Rename `.env-example` file to `.env` within `config/` folder and set the following `key=value`:
 
-PORT=3210
-DB_STRING=`mongodb-uri`
-CLOUD_NAME=`cloudinary-cloud-name`
-API_KEY=`cloudinary-api-key`
-API_SECRET=`cloudinary-api-secret`
+- PORT=3210
+- DB_STRING=`mongodb-uri`
+- CLOUD_NAME=`cloudinary-cloud-name`
+- API_KEY=`cloudinary-api-key`
+- API_SECRET=`cloudinary-api-secret`
 
 ---
 
 ### Development
 
-cd chowstagram
-Run `npm start`
+1. cd chowstagram
+2. Run `npm start`
